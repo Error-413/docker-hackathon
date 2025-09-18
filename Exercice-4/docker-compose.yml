@@ -1,0 +1,46 @@
+version: "3.9"
+services:
+  wordpress-db:
+    image: mariadb:11
+    container_name: wordpress-db
+    environment:
+      MARIADB_DATABASE: efrei-db
+      MARIADB_USER: efrei
+      MARIADB_PASSWORD: efrei
+      MARIADB_ROOT_PASSWORD: rootpass
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks: [wpnet]
+
+  wordpress-app:
+    image: wordpress:6-php8.2-apache
+    container_name: wordpress-app
+    environment:
+      WORDPRESS_DB_HOST: wordpress-db:3306   # DB = conteneur 3
+      WORDPRESS_DB_NAME: efrei-db
+      WORDPRESS_DB_USER: efrei
+      WORDPRESS_DB_PASSWORD: efrei
+    ports:
+      - "8888:80"                            # demandé
+    depends_on: [wordpress-db]
+    volumes:
+      - wpdata:/var/www/html
+    networks: [wpnet]
+
+  backup:
+    build: ./backup
+    container_name: backup
+    volumes:
+      - backups:/backup
+    ports:
+      - "8000:80"                            # demandé
+    depends_on: [wordpress-db]
+    networks: [wpnet]
+
+volumes:
+  dbdata:
+  wpdata:
+  backups:
+
+networks:
+  wpnet:

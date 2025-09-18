@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8">
+<h1 id="title"></h1><p id="date"></p>
+<script>
+  const prenom = "Nassim", nom = "SEGHIRI";
+  document.getElementById("title").textContent = `${prenom} ${nom}`;
+  document.getElementById("date").textContent =
+    new Date().toLocaleString('fr-FR', { timeZone: 'Europe/Paris' });
+</script>
