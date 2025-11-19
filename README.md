@@ -1,11 +1,11 @@
-# 🚀 Exercices Docker – EFREI
+# Exercices Docker – EFREI
 
 Ce dépôt contient l’ensemble de mes exercices pratiques réalisés dans le cadre du module **Docker**.  
 Chaque exercice est organisé dans un dossier séparé, avec ses fichiers sources (Dockerfile, configuration, SQL, docker-compose, etc.).
 
 ---
 
-## 📂 Contenu
+## Contenu
 
 ### 🔹 Exercice 1 – Site web statique
 - Création d’un site HTML affichant mon nom, prénom et la date du jour.
@@ -48,7 +48,7 @@ Chaque exercice est organisé dans un dossier séparé, avec ses fichiers source
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 Ces exercices m’ont permis de :
 - Maîtriser la création d’images Docker.
 - Déployer des services avec **docker run** et **docker compose**.
@@ -57,5 +57,5 @@ Ces exercices m’ont permis de :
 
 ---
 
-👨‍💻 Auteur : **Nassim SEGHIRI**  
-📅 Septembre 2025
+ Auteur : **Nassim SEGHIRI**  
+ Novembre 2025
