@@ -25,6 +25,13 @@ Chaque exercice est organisé dans un dossier séparé, avec ses fichiers source
   - `wordpress-app` (WordPress)
   - `backup` (Nginx servant les dumps SQL)
 
+### 🔹 Exercice 5 – Corriger et compléter un fichier docker-compose
+  Contexte :
+  On a récupéré un fichier docker-compose.yml (depuis Teams) destiné à déployer une application domotique, mais plusieurs erreurs empêchaient le déploiement correct des services.
+  Objectif de l’exercice :
+    - Identifier et corriger les erreurs dans le fichier Docker Compose.
+    - Ajouter toutes les instructions manquantes nécessaires pour que l’application se déploie correctement.
+  
 
 ### 🔹 Facultatif 1 – Registry privé
 - Mise en place d’un registre Docker local (`registry:2`).
