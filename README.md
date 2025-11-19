@@ -1,11 +1,11 @@
-# 🚀 Exercices Docker – EFREI
+# Exercices Docker – EFREI
 
 Ce dépôt contient l’ensemble de mes exercices pratiques réalisés dans le cadre du module **Docker**.  
 Chaque exercice est organisé dans un dossier séparé, avec ses fichiers sources (Dockerfile, configuration, SQL, docker-compose, etc.).
 
 ---
 
-## 📂 Contenu
+## Contenu
 
 ### 🔹 Exercice 1 – Site web statique
 - Création d’un site HTML affichant mon nom, prénom et la date du jour.
@@ -25,6 +25,13 @@ Chaque exercice est organisé dans un dossier séparé, avec ses fichiers source
   - `wordpress-app` (WordPress)
   - `backup` (Nginx servant les dumps SQL)
 
+### 🔹 Exercice 5 – Corriger et compléter un fichier docker-compose
+  Contexte :
+  On a récupéré un fichier docker-compose.yml (depuis Teams) destiné à déployer une application domotique, mais plusieurs erreurs empêchaient le déploiement correct des services.
+  Objectif de l’exercice :
+    - Identifier et corriger les erreurs dans le fichier Docker Compose.
+    - Ajouter toutes les instructions manquantes nécessaires pour que l’application se déploie correctement.
+  
 
 ### 🔹 Facultatif 1 – Registry privé
 - Mise en place d’un registre Docker local (`registry:2`).
@@ -41,7 +48,7 @@ Chaque exercice est organisé dans un dossier séparé, avec ses fichiers source
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 Ces exercices m’ont permis de :
 - Maîtriser la création d’images Docker.
 - Déployer des services avec **docker run** et **docker compose**.
@@ -50,5 +57,5 @@ Ces exercices m’ont permis de :
 
 ---
 
-👨‍💻 Auteur : **Nassim SEGHIRI**  
-📅 Septembre 2025
+ Auteur : **Nassim SEGHIRI**  
+ Novembre 2025
